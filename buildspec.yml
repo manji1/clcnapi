@@ -3,7 +3,7 @@ phases:
   install:
     commands:
       >
-        - aws cloudformation package
+        aws cloudformation package
         --template-file samTemplate.yml
         --s3-bucket manji-s3-test-bucket
         --output-template-file outputSamTemplate.yml
