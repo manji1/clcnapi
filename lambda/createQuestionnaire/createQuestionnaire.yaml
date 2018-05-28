@@ -1,29 +1,13 @@
-AWSTemplateFormatVersion: '2010-09-09'
+﻿AWSTemplateFormatVersion: '2010-09-09'
 Transform: 'AWS::Serverless-2016-10-31'
 Description: An AWS Serverless Specification template describing your function.
 Resources:
-  scanQuestionnaires:
-    Type: 'AWS::Serverless::Function'
-    Properties:
-      Handler: index.handler
-      Runtime: nodejs8.10
-      CodeUri: ./lambda/scanQuestionnaires
-      Description: ''
-      MemorySize: 128
-      Timeout: 3
-      Role: 'arn:aws:iam::741084781837:role/lambda-dynamo-read-only'
-      Events:
-        Api1:
-          Type: Api
-          Properties:
-            Path: /questionnaires
-            Method: GET
   createQuestionnaire:
     Type: 'AWS::Serverless::Function'
     Properties:
       Handler: index.handler
       Runtime: nodejs8.10
-      CodeUri: ./lambda/createQuestionnaires
+      CodeUri: .
       Description: ''
       MemorySize: 128
       Timeout: 3
