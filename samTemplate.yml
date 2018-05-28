@@ -23,7 +23,7 @@ Resources:
     Properties:
       Handler: index.handler
       Runtime: nodejs8.10
-      CodeUri: ./lambda/createQuestionnaires
+      CodeUri: ./lambda/createQuestionnaire
       Description: ''
       MemorySize: 128
       Timeout: 3
